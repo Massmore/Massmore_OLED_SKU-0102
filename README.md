@@ -3,9 +3,12 @@
 **Massmore I2C OLED Display Modules — 0.91" / 0.96" / 1.3" / 1.5" / 1.54" / 2.42" (SKU-0102-1 … 12)**
 Arduino IDE / PlatformIO driver library — **Version 1.0.0** by Massmore — *Designed and Manufactured by Massmore*
 
-<p align="center">
-  <img src="docs/images/oled-sku0102-cover.webp" alt="Massmore I2C OLED display modules SKU-0102" width="520">
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="docs/images/oled-sku0102-cover-small.webp" alt="0.91" / 0.96" — SSD1306 (128×32 / 128×64)"><br><sub>0.91" / 0.96" — SSD1306 (128×32 / 128×64)</sub></td>
+    <td align="center" width="50%"><img src="docs/images/oled-sku0102-cover-large.webp" alt="1.3" / 1.5" / 1.54" / 2.42" — SH1106 / SH1107 / SSD1309"><br><sub>1.3" / 1.5" / 1.54" / 2.42" — SH1106 / SH1107 / SSD1309</sub></td>
+  </tr>
+</table>
 
 > **เริ่มต้นเร็วที่สุด:** ต่อ I2C (SDA/SCL/VCC/GND), เปิดตัวอย่าง `01_HelloWorld`, แก้บรรทัดเดียว `#define OLED_SKU OLED096_White_SSD1306`
 > ให้ตรงรุ่นจอ แล้ว Upload — พิมพ์ได้ทั้งภาษาอังกฤษและ **ภาษาไทย** ทันที
@@ -20,8 +23,19 @@ Arduino IDE / PlatformIO driver library — **Version 1.0.0** by Massmore — *D
 
 <table>
   <tr>
-    <td align="center" width="50%"><img src="docs/images/oled-sku0102-sizes.webp" alt="OLED sizes"><br><sub>ขนาดจอ 0.91" – 2.42"</sub></td>
-    <td align="center" width="50%"><img src="docs/images/oled-sku0102-colors.webp" alt="OLED colours"><br><sub>สีขาว / ฟ้า / ฟ้า-เหลือง</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-091-white.webp" alt="0.91" ขาว — SKU-0102-1"><br><sub>0.91" ขาว — SKU-0102-1</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-096-white.webp" alt="0.96" ขาว — SKU-0102-3"><br><sub>0.96" ขาว — SKU-0102-3</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-096-blue.webp" alt="0.96" ฟ้า — SKU-0102-4"><br><sub>0.96" ฟ้า — SKU-0102-4</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><img src="docs/images/oled-096-blueyellow-dimensions.webp" alt="0.96" ขนาด + โซนเหลือง 16 แถว (SKU-0102-5)"><br><sub>0.96" ขนาด + โซนเหลือง 16 แถว (SKU-0102-5)</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-130-sh1106.webp" alt="1.3" SH1106 — SKU-0102-6/7"><br><sub>1.3" SH1106 — SKU-0102-6/7</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-150-sh1107.webp" alt="1.5" SH1107 128×128 — SKU-0102-8"><br><sub>1.5" SH1107 128×128 — SKU-0102-8</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><img src="docs/images/oled-154-ssd1309.webp" alt="1.54" SSD1309 — SKU-0102-9/10"><br><sub>1.54" SSD1309 — SKU-0102-9/10</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-242-ssd1309.webp" alt="2.42" SSD1309 — SKU-0102-11/12"><br><sub>2.42" SSD1309 — SKU-0102-11/12</sub></td>
+    <td align="center" width="33%"><img src="docs/images/oled-091-blue-pinout.webp" alt="0.91" ฟ้า + ขา — SKU-0102-2"><br><sub>0.91" ฟ้า + ขา — SKU-0102-2</sub></td>
   </tr>
 </table>
 
@@ -66,9 +80,12 @@ Arduino IDE / PlatformIO driver library — **Version 1.0.0** by Massmore — *D
 
 ## 2. Pinout
 
-<p align="center">
-  <img src="docs/images/oled-sku0102-pinout.webp" alt="OLED 4-pin and 5-pin pinout" width="520">
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="docs/images/oled-091-blue-pinout.webp" alt="4 ขา: GND · VCC · SCL · SDA"><br><sub>4 ขา: GND · VCC · SCL · SDA</sub></td>
+    <td align="center" width="50%"><img src="docs/images/oled-150-sh1107.webp" alt="5 ขา (1.5" / 2.42"): GND · VCC · SCL · SDA · RES"><br><sub>5 ขา (1.5" / 2.42"): GND · VCC · SCL · SDA · RES</sub></td>
+  </tr>
+</table>
 
 | Module | Pins (ซ้าย → ขวา) |
 |---|---|
@@ -81,10 +98,6 @@ Arduino IDE / PlatformIO driver library — **Version 1.0.0** by Massmore — *D
 | `SCL` | GPIO 22 | GPIO 15 | A5 |
 | `RES` (จอ 5 ขา) | GPIO 17 (factory jig) | GPIO 18 | D4 (ตัวอย่าง) |
 | `VCC` / `GND` | 3V3 / GND | 3V3 / GND | 5V หรือ 3V3 / GND |
-
-<p align="center">
-  <img src="docs/images/oled-sku0102-esp32-wiring.webp" alt="OLED to ESP32 wiring" width="520">
-</p>
 
 ---
 
@@ -384,7 +397,8 @@ ESP32 ตั้ง `Wire.setClock(800000)` ได้ แต่เกิน spec 
 
 ## 13. Where to Buy
 
-- massmore.shop: TODO: [MASSMORE_INPUT_REQUIRED: product URL SKU-0102]
+- massmore.shop — 0.91" / 0.96" (SSD1306): <https://www.massmore.shop/products/808aa292-9080-4282-b7fd-24884b2a988c>
+- massmore.shop — 1.3" / 1.5" / 1.54" / 2.42" (SH1106 / SH1107 / SSD1309): <https://www.massmore.shop/products/29664f20-b61c-48fa-a6c1-556b5ab50fba>
 - Shopee: TODO: [MASSMORE_INPUT_REQUIRED: Shopee URL]
 - Lazada: TODO: [MASSMORE_INPUT_REQUIRED: Lazada URL]
 

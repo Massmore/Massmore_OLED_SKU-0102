@@ -28,3 +28,7 @@ __pycache__/
 
 # Factory jig project + bench log (ใช้ภายใน Massmore — ไม่ขึ้น GitHub)
 FactoryTest/
+
+# docs/: ขึ้น GitHub เฉพาะรูปสินค้า — datasheet / โค้ดตัวอย่างผู้ขาย / แผนงาน เก็บไว้ในเครื่องเท่านั้น
+docs/*
+!docs/images/
