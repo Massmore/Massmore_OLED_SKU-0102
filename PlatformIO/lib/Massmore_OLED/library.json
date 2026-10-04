@@ -1,0 +1,13 @@
+{
+  "name": "Massmore_OLED",
+  "version": "1.0.0",
+  "description": "One driver for all 12 Massmore I2C OLED modules (SKU-0102): SSD1306, SH1106, SH1107 and SSD1309. Adafruit-GFX-compatible drawing API and GFXfont support, Thai text rendering with Sarabun fonts 12-32 px (SIL OFL 1.1), UI widgets, hardware/software scroll, non-blocking page refresh and controller identity verification. No external dependencies, no dynamic allocation.",
+  "keywords": ["oled", "ssd1306", "ssd1309", "sh1106", "sh1107", "display", "i2c", "thai", "sarabun", "gfx", "esp32", "arduino", "massmore"],
+  "authors": [{ "name": "Massmore Biz Co., Ltd.", "url": "https://www.massmore.shop", "maintainer": true }],
+  "license": "MIT",
+  "homepage": "https://www.massmore.shop",
+  "frameworks": "arduino",
+  "platforms": ["espressif32", "atmelavr"],
+  "headers": ["Massmore_OLED.h"],
+  "build": { "srcDir": "src" }
+}

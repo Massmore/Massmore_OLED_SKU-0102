@@ -1,0 +1,30 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# PlatformIO / Arduino build output
+.pio/
+.pioenvs/
+.piolibdeps/
+build/
+*.o
+*.elf
+*.map
+*.d
+
+# Build artefacts — except the pre-compiled Factory Test binaries
+*.bin
+!firmware/bin/*.bin
+
+# Logs / caches
+*.log
+*.tmp
+*.bak
+__pycache__/
+
+# Factory jig project + bench log (ใช้ภายใน Massmore — ไม่ขึ้น GitHub)
+FactoryTest/
